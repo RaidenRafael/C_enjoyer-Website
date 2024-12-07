@@ -2,73 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
     <title>French Toast Bakery</title>
+    <link rel="stylesheet" href="src/css/homepage.css">
 </head>
 <body>
-    <!-- Parent Container -->
-    <div class="container">
-        <!-- Login Section -->
-        <div class="login-box" id="login-section">
-            <div class="login-header">
-                <header>Login</header>
-            </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Email" autocomplete="off" required>
-            </div>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
-            </div>
-            <div class="forgot">
-                <section>
-                    <input type="checkbox" id="check">
-                    <label for="check">Remember me</label>
-                </section>
-                <section>
-                    <a href="#">Forgot password</a>
-                </section>
-            </div>
-            <div class="input-submit">
-                <button class="submit-btn">Log in</button>
-            </div>
-            <div class="sign-up-link">
-                <p>Don't have an account? <a href="#" onclick="showSignUp()">Sign Up</a></p>
-            </div>
+    <header>
+        <div class="logo">
+            <img src="src/assets/images/main_logo/logo.png" alt="French Toast Bakery Logo">
         </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">OUR STORY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="src/Sub_HTMLS/login.html">LOG IN</a></li>
+                <li><a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
 
-        <!-- Create New Account Section -->
-        <div class="login-box" id="signup-section" style="display: none;">
-            <div class="login-header">
-                <header>Create New Account</header>
-            </div>
-            <h4>NAME*</h4>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Name" autocomplete="off" required>
-            </div>
-            <h4>EMAIL*</h4>
-            <div class="input-box">
-                <input type="email" class="input-field" placeholder="Email" autocomplete="off" required>
-            </div>
-            <h4>PASSWORD*</h4>
-            <div class="input-box">
-                <input type="password" class="input-field" placeholder="Password" autocomplete="off" required>
-            </div>
-            <h4>DATE OF BIRTH*</h4>
-            <div class="input-box">
-                <input type="date" class="input-field" autocomplete="off" required>
-            </div>
-            <div class="input-submit">
-                <button class="submit-btn">Sign up</button>
-            </div>
-            <div class="sign-up-link">
-                <p>Already have an account? <a href="#" onclick="showLogin()">Log in</a></p>
-            </div>
-        </div>
+                <div id="cart-items">
+                    <h2>Your Cart</h2>
+                    <ul id="cart-list">
+                        <!-- Items will be dynamically added here -->
+                    </ul>
+                    <p id="cart-total">Total: $0.00</p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <!-- Tabs Section -->
+    <div class="tabs">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showTab('coffee')" class="active">COFFEE</a></li>
+                <li><a href="#" onclick="showTab('pastries')">PASTRIES</a></li>
+                <li><a href="#" onclick="showTab('bread')">BREAD</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <script src="src/scripts/script.js"></script>
-    
+    <main>
+        <!-- Coffee Section -->
+        <section id="coffee" class="tab-content">
+            <h1>Coffee</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="src/assets/images/Coffees/Latte.png" alt="Latte">
+                    <h2>Latte</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Latte" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Coffees/Mocha.png" alt="Mocha">
+                    <h2>Mocha</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Mocha" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Coffees/Cappuccino.png" alt="Cappuccino">
+                    <h2>Cappuccino</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Cappuccino" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Coffees/Americano.png" alt="Americano">
+                    <h2>Americano</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Americano" data-price="5.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastries Section -->
+        <section id="pastries" class="tab-content" style="display: none;">
+            <h1>Pastries</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="src/assets/images/Pastries/Macarons.png" alt="Macarons">
+                    <h2>Macarons</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Macarons" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Pastries/PainAuChocolat.png" alt="Pain Au Chocolat">
+                    <h2>Pain Au Chocolat</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="PainAuChocolat" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Pastries/MilleFeuille.png" alt="Mille Feuille">
+                    <h2>Mille Feuille</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="MilleFeuille" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Pastries/Chouquette.png" alt="Chouquette">
+                    <h2>Chouquette</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Chouquette" data-price="5.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bread Section -->
+        <section id="bread" class="tab-content" style="display: none;">
+            <h1>Bread</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="src/assets/images/Bread/Baguette.png" alt="Baguette">
+                    <h2>Baguette</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Baguette" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Bread/Boule.png" alt="Boule">
+                    <h2>Boule</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Boule" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Bread/Brioche.png" alt="Brioche">
+                    <h2>Brioche</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Brioche" data-price="5.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="src/assets/images/Bread/Croissant.png" alt="Croissant">
+                    <h2>Croissant</h2>
+                    <p>$5.00</p>
+                    <button class="add-to-cart" data-product="Croissant" data-price="5.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all sections
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(tabId).style.display = 'block';
+
+            // Update active tab
+            document.querySelectorAll('.tabs nav ul li a').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`.tabs nav ul li a[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+
+    <script src="src/scripts/cart.js"></script>
 </body>
 </html>
