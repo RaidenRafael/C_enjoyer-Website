@@ -7,11 +7,34 @@ With the help of other group Member From Designing and Planing
 
 Thank You For The Help And Support!
 
+=====================[Licensing Idk This part is not real]==============================
 
+This Website Is Created By Former ARK Citizens And The 3 Major Nikke Manufacturers
 
+ELYSION
 
+MISSILIS INDUSTRIES
 
+TETRA LINE
 
+And The Two Sanctioned Factions
 
+PILGRIM
 
-[PS: Tell Sakura, Rosana, Moran That Commander Is Missing Another Call From His Spouses, He Is A Dead Man]
+ABNORMAL
+
+if you are reading this, the entire lower part is just a random think and can be ignored.
+
+"also GET OU-" (Random Friend Named "BreadPirate")
+
+"xdee" (Another Random Friend Named "Tinkoo")
+
+///
+
+[PS: Please Tell That Commander Is Missing Another Call From His Spouses, Talking About (Sakura, Rosanna, Moran) He Is A Dead Man To Those Three Underworld Queens]
+
+///
+
+[PPSS: Flower From 1970?, Nah I Prefer Red Feathers From 1929]
+
+///
