@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/story.css">
+    <title>French Toast Bakery</title>
+    
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/images/main_logo/logo.png" alt="French Toast Bakery Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../Sub_HTMLS/ourstory.html">OUR STORY</a></li>
+                <li><a href="../Sub_HTMLS/shop.html">SHOP</a></li>
+                <li><a href="../Sub_HTMLS/login.html">LOG IN</a></li>
+                <li><a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+                <div id="cart-items">
+                    <h2>Your Cart</h2>
+                    <ul id="cart-list">
+                        <!-- Items will be dynamically added here -->
+                    </ul>
+                    <p id="cart-total">Total: $0.00</p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+
+
+    <!-- New Section: About Us -->
+    <div class="bg-background p-8">
+       
+        <h2 class="Story">Our Story</h2>
+        <div class="border">
+            <div class="border2">
+            
+            <p class="content1">
+                ONE DAY AT THE MALL, I WAS TOTALLY DRAWN IN BY THE SMELL OF FRESH BREAD. I STOPPED BY THIS LITTLE BAKERY AND PICKED UP A BAGUETTE IT WAS SIMPLE, COMFORTING, AND SO DELICIOUS THAT I COULDN’T STOP
+                SMILING. THAT’S WHEN IT HIT ME “WHY NOT CREATE MY OWN PLACE WHERE EVERYONE CAN ENJOY THIS VIBE?”
+            <br><br></p>
+            <p class="content2">
+                AND THAT’S HOW FRENCH TOAST BAKERY GOT STARTED NOW WE’RE ALL ABOUT SERVING UP SWEET MOMENTS WITH OUR DELICIOUS BAKED GOODS AND FRENCH BREAKFAST. WHETHER YOU’RE POPPING IN FOR A QUICK SNACK,
+                HANGING OUT WITH FRIENDS, OR ORDERING ONLINE WHILE CHILLING AT HOME, WE’RE HERE TO MAKE YOUR DAY A BIT BRIGHTER.
+           <br><br> </p>
+            <p class="content3">ONE SLICE AT A TIME.</p>
+        </div> 
+    </div>
+    </div>
+
+    <script>
+        function showTab(tabId) {
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            document.getElementById(tabId).style.display = 'block';
+
+            document.querySelectorAll('.tabs nav ul li a').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`.tabs nav ul li a[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+    <script src="src/scripts/cart.js"></script>
+</body>
+</html>

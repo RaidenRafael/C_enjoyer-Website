@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>French Toast Bakery</title>
+    <link rel="stylesheet" href="../css/shop.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../assets/images/main_logo/logo.png" alt="French Toast Bakery Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="#">OUR STORY</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="../Sub_HTMLS/login.html">LOG IN</a></li>
+                <li><a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
+
+                <div id="cart-items">
+                    <h2>Your Cart</h2>
+                    <ul id="cart-list">
+                        <!-- Items will be dynamically added here -->
+                    </ul>
+                    <p id="cart-total">Total: P0.00</p>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <!-- Tabs Section -->
+    <div class="tabs">
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showTab('coffee')" class="active">COFFEE</a></li>
+                <li><a href="#" onclick="showTab('pastries')">PASTRIES</a></li>
+                <li><a href="#" onclick="showTab('bread')">BREAD</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Coffee Section -->
+        <section id="coffee" class="tab-content">
+            <h1>Coffee</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="../assets/images/Coffees/Latte.png" alt="Latte">
+                    <h2>Latte</h2>
+                    <p>P100.00</p>
+                    <button class="add-to-cart" data-product="Latte" data-price="100.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Coffees/Mocha.png" alt="Mocha">
+                    <h2>Mocha</h2>
+                    <p>P100.00</p>
+                    <button class="add-to-cart" data-product="Mocha" data-price="100.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Coffees/Cappuccino.png" alt="Cappuccino">
+                    <h2>Cappuccino</h2>
+                    <p>P150.00</p>
+                    <button class="add-to-cart" data-product="Cappuccino" data-price="150.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Coffees/Americano.png" alt="Americano">
+                    <h2>Americano</h2>
+                    <p>P90.00</p>
+                    <button class="add-to-cart" data-product="Americano" data-price="90.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pastries Section -->
+        <section id="pastries" class="tab-content" style="display: none;">
+            <h1>Pastries</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="../assets/images/Pastries/Macarons.png" alt="Macarons">
+                    <h2>Macarons</h2>
+                    <p>P100.00</p>
+                    <button class="add-to-cart" data-product="Macarons" data-price="100.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Pastries/PainAuChocolat.png" alt="Pain Au Chocolat">
+                    <h2>Pain Au Chocolat</h2>
+                    <p>P125.00</p>
+                    <button class="add-to-cart" data-product="PainAuChocolat" data-price="125.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Pastries/MilleFeuille.png" alt="Mille Feuille">
+                    <h2>Mille Feuille</h2>
+                    <p>P125.00</p>
+                    <button class="add-to-cart" data-product="MilleFeuille" data-price="125.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Pastries/Chouquette.png" alt="Chouquette">
+                    <h2>Chouquette</h2>
+                    <p>P25.00</p>
+                    <button class="add-to-cart" data-product="Chouquette" data-price="25.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bread Section -->
+        <section id="bread" class="tab-content" style="display: none;">
+            <h1>Bread</h1>
+            <div class="products">
+                <div class="product">
+                    <img src="../assets/images/Bread/Baguette.png" alt="Baguette">
+                    <h2>Baguette</h2>
+                    <p>P125.00</p>
+                    <button class="add-to-cart" data-product="Baguette" data-price="125.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Bread/Boule.png" alt="Boule">
+                    <h2>Boule</h2>
+                    <p>P70.00</p>
+                    <button class="add-to-cart" data-product="Boule" data-price="70.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Bread/Brioche.png" alt="Brioche">
+                    <h2>Brioche</h2>
+                    <p>P25.00</p>
+                    <button class="add-to-cart" data-product="Brioche" data-price="25.00">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="../assets/images/Bread/Croissant.png" alt="Croissant">
+                    <h2>Croissant</h2>
+                    <p>P125.00</p>
+                    <button class="add-to-cart" data-product="Croissant" data-price="125.00">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function showTab(tabId) {
+            // Hide all sections
+            document.querySelectorAll('.tab-content').forEach(tab => {
+                tab.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(tabId).style.display = 'block';
+
+            // Update active tab
+            document.querySelectorAll('.tabs nav ul li a').forEach(link => {
+                link.classList.remove('active');
+            });
+            document.querySelector(`.tabs nav ul li a[onclick="showTab('${tabId}')"]`).classList.add('active');
+        }
+    </script>
+
+    <script src="../scripts/cart.js"></script>
+</body>
+</html>
