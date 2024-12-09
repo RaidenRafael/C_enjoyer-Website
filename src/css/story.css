@@ -166,3 +166,40 @@ main {
     text-decoration: none;
     color: black;
 }
+.Story {
+    font-size: 80px;
+    font-family: Brush Script MT;
+    font-weight: 100;
+    color: #2c2c2c;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 20px;
+    
+    
+  }
+  .border {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px ;
+    font-size: 18px;
+    line-height: 1.8;
+    border: 5px double #986c4a;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    color: #986c4a;
+  }
+ 
+  .content1 .content2  {
+    font-weight: bold;
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+ .content3 {
+    font-style: italic;
+    color: #986c4a;
+    font-size: 18px;
+  }
+  

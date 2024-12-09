@@ -14,7 +14,7 @@ function addToCart(productName, price) {
     // Update cart items
     const cartList = document.getElementById("cart-list");
     const listItem = document.createElement("li");
-    listItem.innerHTML = `${productName} - $${price}`;
+    listItem.innerHTML = `${productName} - P${price}`;
     cartList.appendChild(listItem);
 
     // Update total

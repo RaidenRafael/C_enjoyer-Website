@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>French Toast Bakery</title>
-    <link rel="stylesheet" href="src/css/homepage.css">
+    <link rel="stylesheet" href="src/css/home.css">
 </head>
 <body>
     <header>
@@ -13,9 +13,9 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">OUR STORY</a></li>
-                <li><a href="#">SHOP</a></li>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="src/Sub_HTMLS/ourstory.html">OUR STORY</a></li>
+                <li><a href="src/Sub_HTMLS/shop.html">SHOP</a></li>
                 <li><a href="src/Sub_HTMLS/login.html">LOG IN</a></li>
                 <li><a href="#cart" id="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
 
@@ -30,113 +30,29 @@
         </nav>
     </header>
 
-    
+     <!-- New Hero Section -->
+     <section class="hero">
+        <div class="hero-content">
+            <h1>Fudgy Brownie</h1>
+            <a href="src/Sub_HTMLS/shop.html"><button class="order-now">Order Now</button></a>
+        </div>
+    </section>
 
-    <!-- Tabs Section -->
-    <div class="tabs">
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showTab('coffee')" class="active">COFFEE</a></li>
-                <li><a href="#" onclick="showTab('pastries')">PASTRIES</a></li>
-                <li><a href="#" onclick="showTab('bread')">BREAD</a></li>
-            </ul>
-        </nav>
-    </div>
-
-    <main>
-        <!-- Coffee Section -->
-        <section id="coffee" class="tab-content">
-            <h1>Coffee</h1>
-            <div class="products">
-                <div class="product">
-                    <img src="src/assets/images/Coffees/Latte.png" alt="Latte">
-                    <h2>Latte</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Latte" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Coffees/Mocha.png" alt="Mocha">
-                    <h2>Mocha</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Mocha" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Coffees/Cappuccino.png" alt="Cappuccino">
-                    <h2>Cappuccino</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Cappuccino" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Coffees/Americano.png" alt="Americano">
-                    <h2>Americano</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Americano" data-price="5.00">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Pastries Section -->
-        <section id="pastries" class="tab-content" style="display: none;">
-            <h1>Pastries</h1>
-            <div class="products">
-                <div class="product">
-                    <img src="src/assets/images/Pastries/Macarons.png" alt="Macarons">
-                    <h2>Macarons</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Macarons" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Pastries/PainAuChocolat.png" alt="Pain Au Chocolat">
-                    <h2>Pain Au Chocolat</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="PainAuChocolat" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Pastries/MilleFeuille.png" alt="Mille Feuille">
-                    <h2>Mille Feuille</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="MilleFeuille" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Pastries/Chouquette.png" alt="Chouquette">
-                    <h2>Chouquette</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Chouquette" data-price="5.00">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Bread Section -->
-        <section id="bread" class="tab-content" style="display: none;">
-            <h1>Bread</h1>
-            <div class="products">
-                <div class="product">
-                    <img src="src/assets/images/Bread/Baguette.png" alt="Baguette">
-                    <h2>Baguette</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Baguette" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Bread/Boule.png" alt="Boule">
-                    <h2>Boule</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Boule" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Bread/Brioche.png" alt="Brioche">
-                    <h2>Brioche</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Brioche" data-price="5.00">Add to Cart</button>
-                </div>
-                <div class="product">
-                    <img src="src/assets/images/Bread/Croissant.png" alt="Croissant">
-                    <h2>Croissant</h2>
-                    <p>$5.00</p>
-                    <button class="add-to-cart" data-product="Croissant" data-price="5.00">Add to Cart</button>
-                </div>
-            </div>
-        </section>
-    </main>
+    <!-- New Product Category Section -->
+    <section class="categories">
+        <div class="category">
+            <img src="src/assets/images/Homepage/pastries.png" alt="Pastries">
+            <h3>PASTRIES</h3>
+        </div>
+        <div class="category">
+            <img src="src/assets/images/Homepage/bread.png" alt="Bread">
+            <h3>BREAD</h3>
+        </div>
+        <div class="category">
+            <img src="src/assets/images/Homepage/coffee.png" alt="Coffee">
+            <h3>COFFEE</h3>
+        </div>
+    </section>
 
     <script>
         function showTab(tabId) {
